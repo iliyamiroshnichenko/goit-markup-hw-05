@@ -89,10 +89,9 @@ img {
 }
 .nav-main .link.current::after {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   content: "";
-  display: block;
   width: 100%;
   height: 4px;
   background-color: var(--accent-color);
@@ -176,9 +175,10 @@ img {
 }
 /* кнопка героя */
 .button.primary {
-  display: inline-block;
+  display: block;
   min-width: 200px;
   padding: 10px 32px;
+  border-color: transparent;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
